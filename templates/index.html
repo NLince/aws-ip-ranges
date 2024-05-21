@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>IP Ranges</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">IP Ranges</h1>
+        <div class="table-responsive">
+            {{ table_html|safe }}
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('table').DataTable();
+        });
+    </script>
+</body>
+</html>
